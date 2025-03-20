@@ -40,7 +40,7 @@ while True:
     ldr_value = ldr.value()
     if ldr_value == 0:
 # If light is detected spin the stepper motor, light up neopixel, move servo motors
-        for _ in range(500):  # Spin for 100 steps
+        for _ in range(500):  
             move_stepper()
         for i in range(16):
             np[i] = (0, 0, 255)
